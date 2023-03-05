@@ -1,7 +1,5 @@
 package com.poznan.put.rest.webservice.restapi.user;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.poznan.put.rest.webservice.restapi.post.Post;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
