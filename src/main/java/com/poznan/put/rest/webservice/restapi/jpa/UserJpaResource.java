@@ -30,13 +30,13 @@ public class UserJpaResource {
     }
 
     // display all Users details
-    @GetMapping("/jpa/users")
+    @GetMapping("/users")
     public List<User> retrieveAllUsers(){
         return userRepository.findAll();
     }
 
     // display User details
-    @GetMapping("/jpa/users/{id}")
+    @GetMapping("/users/{id}")
     public EntityModel<User> retrieveUserById(@PathVariable int id){
         Optional<User> user = userRepository.findById(id);
         if(user.isEmpty()){
@@ -49,7 +49,7 @@ public class UserJpaResource {
     }
 
     // create new User
-    @PostMapping("/jpa/users")
+    @PostMapping("/users")
     public ResponseEntity<User> createNewUser(@Valid @RequestBody User user){
         // add user into the ArrayList in Service
         User savedUser = userRepository.save(user);
@@ -65,12 +65,12 @@ public class UserJpaResource {
     }
 
     // delete User
-    @DeleteMapping("/jpa/users/{id}")
+    @DeleteMapping("/users/{id}")
     public void deleteUserById(@PathVariable int id){
         userRepository.deleteById(id);
     }
 
-    @GetMapping("/jpa/users/{id}/posts")
+    @GetMapping("/users/{id}/posts")
     public List <Post> retrievePostsForUser(@PathVariable int id){
         Optional<User> user = userRepository.findById(id);
         if(user.isEmpty()){
@@ -79,7 +79,7 @@ public class UserJpaResource {
         return user.get().getPosts();
     }
 
-    @PostMapping("/jpa/users/{id}/posts")
+    @PostMapping("/users/{id}/posts")
     public ResponseEntity<Object> createPostForUser(@PathVariable int id, @Valid @RequestBody Post post){
         Optional<User> user = userRepository.findById(id);
 
