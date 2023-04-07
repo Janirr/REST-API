@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2d3fa6e-8292-473d-bd2c-16ae3e30240d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/jpa/StudentJpaResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/jpa/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/reservation/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/student/StudentNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/RestApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/RestApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/exception/CustomizedResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/exception/CustomizedResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/filtering/FilteringController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/filtering/SomeBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/helloworld/HelloWorldBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/helloworld/HelloWorldController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/jpa/PostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/jpa/UserJpaResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/jpa/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/jpa/ReservationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/security/SpringSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/security/SpringSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/user/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/user/UserNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/versioning/Name.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/versioning/PersonV1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/versioning/PersonV2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poznan/put/rest/webservice/restapi/versioning/VersioningPersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Ngq5idm6ZY1580xJbCbvLgWnzC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Janir/Projects/TimeFinder-rest-api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1d9ddd56403cb54aecb11fb26fd7851e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Janir\Projects\rest-api\src\main\java\com\poznan\put\rest\webservice\restapi" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TimeFinder-rest-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TimeFinder-rest-api" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rest-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.poznan.put.rest.webservice.restapi.RestApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2d3fa6e-8292-473d-bd2c-16ae3e30240d" name="Changes" comment="" />
+      <created>1680095894615</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680095894615</updated>
+      <workItem from="1680095896160" duration="1872000" />
+      <workItem from="1680279104188" duration="895000" />
+      <workItem from="1680338537425" duration="1477000" />
+      <workItem from="1680451503026" duration="35000" />
+      <workItem from="1680869476347" duration="5106000" />
+      <workItem from="1680874745731" duration="5995000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
