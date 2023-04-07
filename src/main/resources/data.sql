@@ -1,6 +1,6 @@
-INSERT INTO user_details(id, birth_date, name) VALUES (101, current_date(), 'janir');
-INSERT INTO user_details(id, birth_date, name) VALUES (102, current_date(), 'kuba');
-INSERT INTO user_details(id, birth_date, name) VALUES (103, current_date(), 'abc');
-INSERT INTO post(id, description, user_id) VALUES(104, 'Max Verstappen won Bahrain GP', 101);
-INSERT INTO post(id, description, user_id) VALUES(105, 'Sergio Perez was second in the Bahrain GP', 102);
-INSERT INTO post(id, description, user_id) VALUES(106, 'Fernando Alonso was third in the Bahrain GP', 102);
+    INSERT INTO student(advanced, name, subject, surname, type_of_school, year_of_school) VALUES (false,"Jakub","Matematyka","Królewicz","Studia",3);
+
+    INSERT INTO reservation(day, end_hour, start_hour, student_id) VALUES (CURRENT_DATE, CURRENT_TIME(), CURRENT_TIME() + 1, 1);
+    INSERT INTO reservation(day, end_hour, start_hour, student_id) VALUES (CURRENT_DATE, CURRENT_TIME(), CURRENT_TIME() + 1, 1);
+    INSERT INTO reservation(day, end_hour, start_hour, student_id) VALUES (CURRENT_DATE, CURRENT_TIME(), CURRENT_TIME() + 1, 1);
+
