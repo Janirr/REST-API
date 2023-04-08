@@ -2,6 +2,7 @@ package com.poznan.put.rest.webservice.restapi.jpa;
 
 import com.poznan.put.rest.webservice.restapi.reservation.Reservation;
 import com.poznan.put.rest.webservice.restapi.student.Student;
+import com.poznan.put.rest.webservice.restapi.student.StudentNotFoundException;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,13 +36,9 @@ public class StudentJpaResource {
     @GetMapping("/students/{id}")
     public Optional<Student> retrieveStudentById(@PathVariable int id){
         Optional<Student> Student = StudentRepository.findById(id);
-//        if(Student.isEmpty()){
-//            throw new StudentNotFoundException("id:"+id);
-//        }
-//        EntityModel<Student> entityModel = EntityModel.of(Student.get());
-//        WebMvcLinkBuilder link = linkTo(methodOn(this.getClass()).retrieveReservationsForStudent(id));
-//        entityModel.add
-//        entityModel.add(link.withRel("reservations"));
+        if(Student.isEmpty()){
+            throw new StudentNotFoundException("There is no student with id: "+id);
+        }
         return Student;
     }
 
@@ -70,32 +67,32 @@ public class StudentJpaResource {
     @GetMapping("/students/{id}/reservations")
     public List<Reservation> retrieveReservationsForStudent(@PathVariable int id){
         Optional<Student> Student = StudentRepository.findById(id);
-        //        if(Student.isEmpty()){
-//            throw new StudentNotFoundException("id:"+id);
-//        }
+        if(Student.isEmpty()){
+            throw new StudentNotFoundException("id:"+id);
+        }
         return Student.get().getReservationList();
     }
-//
-//    @PostMapping("/Students/{id}/dates")
-//    public ResponseEntity<Object> createdateForStudent(@PathVariable int id, @Valid @RequestBody date date){
-//        Optional<Student> Student = StudentRepository.findById(id);
-//
-//        if(Student.isEmpty()){
-//            throw new StudentNotFoundException("id:"+id);
-//        }
-//        date.setStudent(Student.get());
-//        date saveddate = reservationRepository.save(date);
-//        URI location = ServletUriComponentsBuilder
-//                .fromCurrentRequest()
-//                .path("/{id}")
-//                .buildAndExpand(saveddate.getId())
-//                .toUri();
-//        return ResponseEntity.created(location).build();
-//    }
-@GetMapping("/reservations")
-public List<Reservation> retrieveAllReservations(){
-    return ReservationRepository.findAll();
-}
+
+    @PostMapping("/students/{id}/reservations")
+    public ResponseEntity<Object> createdateForStudent(@PathVariable int id, @Valid @RequestBody Reservation reservation){
+        Optional<Student> Student = StudentRepository.findById(id);
+        if(Student.isEmpty()){
+            throw new StudentNotFoundException("id:"+id);
+        }
+        reservation.setStudent(Student.get());
+        Reservation savedReservation = ReservationRepository.save(reservation);
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{id}")
+                .buildAndExpand(savedReservation.getId())
+                .toUri();
+        return ResponseEntity.created(location).build();
+    }
+
+    @GetMapping("/reservations")
+    public List<Reservation> retrieveAllReservations(){
+        return ReservationRepository.findAll();
+    }
 
     @PostMapping("/reservations")
     public ResponseEntity<Reservation> createNewReservation(@Valid @RequestBody Reservation reservation){
